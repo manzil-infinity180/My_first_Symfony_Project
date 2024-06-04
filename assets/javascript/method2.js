@@ -1,0 +1,1 @@
+alert('I am Method2 Bruuuh');

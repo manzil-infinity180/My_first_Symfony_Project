@@ -1,0 +1,26 @@
+{# <h1>Helllo JJIIII</h1> #}
+{# <h1>{{name}}</h1> #}
+{# 
+{% if name %}
+  <h1>Here is name : {{name}} </h1>
+{% else %}
+   <h1>Ohh Bro  no name specified</h1>
+{% endif %} #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Symfony Lecture
+   
+{% endblock %}
+
+{% block body %}
+    <h3>Symfony Lecture Block</h3>
+    <h1>Downloading</h1>
+    <p>{{author}} </p>          {# check package/twig.yaml -> basically it is global variable #}
+    {% for series in webseries %}
+        <li>{{series}}</li>
+        {# comments #}
+    {% endfor %}
+{% endblock %}
+
